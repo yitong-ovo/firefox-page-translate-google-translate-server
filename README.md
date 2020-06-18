@@ -1,6 +1,7 @@
 # firefox-page-translate-google-translate-server
 使用免费公开的 google translate 服务在 firefox 中进行页面翻译。
 <del>你觉得我会写个认真的 Readme 吗?</del>
+
 # Why？
 我上个月[配置](https://blog.groverchou.com/2020/04/09/%E5%90%AF%E7%94%A8-Firefox-%E5%86%85%E7%BD%AE%E5%85%A8%E9%A1%B5%E9%9D%A2%E7%BF%BB%E8%AF%91%E5%8A%9F%E8%83%BD/)好了使用 google translate api 的 firefox，用的很舒服，直到...
 
@@ -33,5 +34,7 @@ rm ../omni.ja ;zip -qr0XD ../omni.ja *;
 
 然后记得添加 `browser.translation.google.apiURL` 字符串，设置为你的 API 的地址，例如 `http://localhost:5000/api/translate`。
 
-
+# 不准确的对比
+google translate api - 大概 2-4s
+本项目(?)，跑在 Cloud Run 上 - 大概 5-10s，在接受范围内。
 
