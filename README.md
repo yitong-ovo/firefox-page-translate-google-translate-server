@@ -35,6 +35,11 @@ rm ../omni.ja ;zip -qr0XD ../omni.ja *;
 然后记得添加 `browser.translation.google.apiURL` 字符串，设置为你的 API 的地址，例如 `http://localhost:5000/api/translate`。
 
 # 不准确的对比
-google translate api - 大概 2-4s
-本项目(?)，跑在 Cloud Run 上 - 大概 5-10s，在接受范围内。
+
+- google translate api 
+  - 大概 2-4s 
+  - 更少翻译请求(分块)出错
+- 本项目(?)，跑在 Cloud Run 上
+  - 大概 5-10s，在接受范围内。 
+  - 有时候会有一块分块超时之类的原因失败
 
