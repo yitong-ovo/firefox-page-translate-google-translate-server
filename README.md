@@ -12,7 +12,7 @@
 找了找有不少可以使用 translate.google.com 的库，那就试着做个假的 api，然后去 FireFox 里换一下 URL 就可以了。
 
 # HowTo?
-FireFox(77.0.1,MacOS)
+FireFox(78.0.1,MacOS)
 去 `/Applications/Firefox.app/Contents/Resources/browser/` 找到 `omni.ja` 文件，自己备份一下。
 
 然后去终端里，建一个临时文件夹，我这里的是 `omni`，去临时文件夹里解压。
