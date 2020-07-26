@@ -3,7 +3,7 @@
 <del>你觉得我会写个认真的 Readme 吗?</del>
 
 # Why？
-我上个月[配置](https://blog.groverchou.com/2020/04/09/%E5%90%AF%E7%94%A8-Firefox-%E5%86%85%E7%BD%AE%E5%85%A8%E9%A1%B5%E9%9D%A2%E7%BF%BB%E8%AF%91%E5%8A%9F%E8%83%BD/)好了使用 google translate api 的 firefox，用的很舒服，直到...
+我上个月[配置](https://blog.groverchou.com/2020/04/09/%E5%90%AF%E7%94%A8-Firefox-%E5%86%85%E7%BD%AE%E5%85%A8%E9%A1%B5%E9%9D%A2%E7%BF%BB%E8%AF%91%E5%8A%9F%E8%83%BD/)好了使用 google translate api 的 firefox，体验和之前用 Chrome 一样，直到...
 
 收到了 Google Cloud 的账单。
 
@@ -12,12 +12,12 @@
 找了找有不少可以使用 translate.google.com 的库，那就试着做个假的 api，然后去 FireFox 里换一下 URL 就可以了。
 
 # HowTo?
-FireFox(78.0.1,MacOS)
+FireFox(78.0.2,MacOS)
 去 `/Applications/Firefox.app/Contents/Resources/browser/` 找到 `omni.ja` 文件，自己备份一下。
 
 然后去终端里，建一个临时文件夹，我这里的是 `omni`，去临时文件夹里解压。
 ```bash
-unzip ../omni.ja.bak-77.0.1
+unzip ../omni.ja.bak-77.0.2
 ```
 编辑 `modules/translation/GoogleTranslator.jsm`
 ```javascript
@@ -43,3 +43,8 @@ rm ../omni.ja ;zip -qr0XD ../omni.ja *;
   - 大概 5-10s，在接受范围内。 
   - 有时候会有一块分块超时之类的原因失败
 
+# Todo
+- [] Google Cloud Run version
+- [] dockerfile?
+- [] Test: ja_JP - zh_CN/TW > ja_JP - en_US - zh_CN/TW
+- [] Use "browser.translation.google.apiKey" to verify.
