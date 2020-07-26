@@ -44,7 +44,7 @@ rm ../omni.ja ;zip -qr0XD ../omni.ja *;
   - 有时候会有一块分块超时之类的原因失败
 
 # Todo
-- [] Google Cloud Run version
-- [] dockerfile?
-- [] Test: ja_JP - zh_CN/TW > ja_JP - en_US - zh_CN/TW
-- [] Use "browser.translation.google.apiKey" to verify.
+- [ ] Google Cloud Run version
+- [ ] dockerfile?
+- [ ] Test: ja_JP - zh_CN/TW > ja_JP - en_US - zh_CN/TW
+- [ ] Use "browser.translation.google.apiKey" to verify.
